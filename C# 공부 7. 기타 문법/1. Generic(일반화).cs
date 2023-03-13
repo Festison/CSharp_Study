@@ -4,7 +4,8 @@ namespace _7._기타_문법
 {
     class Program
     {
-        class MyList<T> where T : struct // 조건 추가 T는 반드시 값형식
+        // 
+        class MyList<T> where T : Monster // 조건 추가 T는 반드시 값형식
         {
             T[] arr = new T[10];
 
@@ -19,7 +20,7 @@ namespace _7._기타_문법
 
         }
 
-        static void Test<T>(int input)
+        static void Test<T>(T input)
         {
 
         }
@@ -33,7 +34,6 @@ namespace _7._기타_문법
             MyList<Monster> myMonsterList = new MyList<Monster>();
 
             Test<int>(3);
-
         }
     }
 }
